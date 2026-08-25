@@ -1,8 +1,10 @@
 // Aula 03 - 17/08/2026 - Exercício 1 
 // Daniel Alves  de Morais - 26162686
 // Criar quatro métodos: somar, subtrair, multiplicar e dividir
+
 package Exercicios;
-public class Ex1 {
+
+class Exercicio1 {
 
     Double num1;
     Double num2;

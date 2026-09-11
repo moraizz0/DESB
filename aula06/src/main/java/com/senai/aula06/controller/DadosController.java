@@ -10,25 +10,19 @@ import org.springframework.web.bind.annotation.RestController;
 // Indica ao Spring Boot que esta classe é um Controller REST.
 // Os métodos desta classe podem responder às requisições HTTP da API.
 @RestController
-public class HelloController {
-    
-    private final Aula06Application aula06Application;
 
-    HelloController(Aula06Application aula06Application) {
+public class DadosController {
+    
+    private final Aula06Application aula06Application; 
+
+    public DadosController(Aula06Application aula06Application){
         this.aula06Application = aula06Application;
     }
 
-    // Cria um endpoint HTTP do tipo GET.
-    // Quando o usuário acessar:
-    // http://localhost:8080/hello
-    // o Spring executará o método hello(). 
-    @GetMapping("/hello")
-    public String hello(){
-
-        // Retorna uma String como resposta da requisição HTTP.
-        // Como estamos utilizando @RestController,
-        // o texto é enviado diretamente no corpo da resposta.
-        return "Olá Spring Boot!! :) ";
+    @GetMapping("/dados")
+    public String dados() {
+        return "Senai Roberto Mange - Daniel Morais";
     }
+      
 }
 
